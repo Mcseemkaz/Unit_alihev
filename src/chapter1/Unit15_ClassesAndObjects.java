@@ -13,28 +13,32 @@ public class Unit15_ClassesAndObjects {
 		person1.setAge(36);
 		//Person 2
 		Person person2 = new Person();
-		person2.name = "Johuya";
-		person2.age = 28;
 		person1.speak();
 		//person2.sayHello();
 		
-		
-
-	}
+		}
 
 }
 
 class Person{
-	String name;
-	int age;
+	private String name;
+	private int age;
 	
-	void setName(String username) {
+	public void setName(String username) {
 		name = username;
 		}
+	public String getName() {
+		return name;
+	}
 	
-	void setAge(int userage) {
+	
+	public void setAge(int userage) {
 		age = userage;
 		}
+	
+	public int getAge() {
+		return age;
+	    }
 	
 	
 	void speak() {
